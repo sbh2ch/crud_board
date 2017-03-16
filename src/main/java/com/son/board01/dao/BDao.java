@@ -17,19 +17,15 @@ public class BDao {
 	DataSource dataSource;
 
 	public BDao() {
-		// TODO Auto-generated constructor stub
-
 		try {
 			Context context = new InitialContext();
 			dataSource = (DataSource) context.lookup("java:comp/env/jdbc/Oracle11g");
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 	}
 
 	public void write(String bName, String bTitle, String bContent) {
-		// TODO Auto-generated method stub
 
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
