@@ -21,4 +21,3 @@ and create a sequence too,<br>
 <br>
 <h3>create sequence mvc_board_seq;</h3><br>
 <br>
-thx<br>
